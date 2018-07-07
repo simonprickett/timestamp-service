@@ -1,0 +1,10 @@
+[Unit]
+Description=Timestamp Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /home/pi/timestamp-service/timestamp-service.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
