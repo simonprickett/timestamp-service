@@ -9,4 +9,4 @@ http.createServer((request, response) => {
 
   response.write(`${timeStamp}`)
   response.end()
-}).listen(8000)
+}).listen(process.env.PORT)
