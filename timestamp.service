@@ -5,6 +5,7 @@ After=network.target
 [Service]
 ExecStart=/usr/bin/node /home/pi/timestamp-service/timestamp-service.js
 Restart=on-failure
+User=pi
 
 [Install]
 WantedBy=multi-user.target
