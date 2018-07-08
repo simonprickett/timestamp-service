@@ -3,7 +3,8 @@ Description=Timestamp Service
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/node /home/pi/timestamp-service/timestamp-service.js
+WorkingDirectory=/home/pi/timestamp-service
+ExecStart=/usr/bin/npm start
 Restart=on-failure
 User=pi
 Environment=PORT=8000
